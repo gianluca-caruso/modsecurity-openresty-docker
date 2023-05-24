@@ -9,7 +9,7 @@ The dockerfile was created by taking inspiration from the "[Creare un WAF: libMo
 Build
 
 ```bash
-$ docker build -t modsecurity-openresty .
+$ docker build -t modsecurity-openresty ./
 ```
 
 Run
