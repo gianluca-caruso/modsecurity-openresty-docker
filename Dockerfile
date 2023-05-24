@@ -1,7 +1,3 @@
-#############################################################################
-# Description: Dockerfile ModSecurity-nginx (fast)                          #
-#############################################################################
-
 FROM ubuntu:latest 
 
 #############################################################################
@@ -83,5 +79,6 @@ COPY ./conf/modsecurity.conf /usr/local/openresty/nginx/conf/modsecurity.conf
 # copy crs-setup.conf file
 COPY ./conf/crs-setup.conf /usr/local/openresty/nginx/conf/coreruleset/crs-setup.conf
 
-# expose port 
+# expose port 80 and 443
 EXPOSE 80 80
+EXPOSE 443 443
